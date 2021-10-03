@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <script src = "script.js"></script>
+    <title>iChing: A guide to insight</title>
+    
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center">iChing: The Book of Changes</h1>
+
+        <p> Welcome to your I Ching fortune!  If you are curious more can be learned about this ancient text at the 
+            <a href="https://en.wikipedia.org/wiki/I_Ching">iChing Wikipedia article</a>  or  
+            <a href="https://divination.com/how-to-consult-the-i-ching/">divination.com's iChing page</a>
+            Many wise elders, sages, and noblemen have disagreed on whether the I Ching is a powerful oracle of fate or merely an entertaining game of 
+            probability.  Ultimately it is best to see what what you think it is for yourself! 
+            To consult the I Ching, clear your mind for a moment and try to think about a question or situation that is important to you, and type
+            it out below.  Please clear your mind for a moment and see what comes to your mind.  This is the most important part of the whole 
+            process.
+        </p>
+    </header>
+    <article id = "questionbox">
+        <input type="text" size="100">
+    </article>
+    <article id = "explanation">
+        <p>
+            The I Ching will use a flip of three coins per line to determine what goes on each line of your Hexagram.  There are six lines in each
+            Hexagram and both are customarily filled in from the bottom to the top.  The left Hexagram represents our present and the second our 
+            change or future.  To visualize, let's pretend each line is a coin-flip Yin Yang: 
+        <p>
+            Two tails and a head will result in a - - Yang unchanged to a future - - Yang. (Black part of Yin Yang) <br>
+            Two heads and a tail will result in a --- Yin unchanged to a future  --- Yin. (White part of Yin Yang) <br>
+            Three tails will result in a present  - - Yin changing to a future   --- Yang (The black dot in the white part of the Yin Yang). <br>
+            Three heads will result in a present  --- Yang changing to a future  - - Yin (The white dot in the black part of the Yin Yang). <br>
+        </p>
+        <p>
+            If this is confusing, that's because it kind of is!  Thankfully we don't actually need to know any of this as the computer will do it 
+            for us.  Whenever you are ready just press Enter and the computer will flip your coins and compile your Hexagram for you (it will start 
+            to make sense as we progress.
+        </p>
+        <p>
+            To start, click the button when you are ready <button id="readybox"style="margin-left: 10px;">I'm ready</button>
+        </p>
+    </article>
+    <article id = "coinresults">
+        <p></p>
+    </article>
+    <article>
+        <h2 id="line1"></h2>
+        <h2 id="line2"></h2>
+        <h2 id="line3"></h2>
+        <h2 id="line4"></h2>
+        <h2 id="line5"></h2>
+        <h2 id="line6"></h2>
+        <p>
+            A table lookup of the Hexagram can be found at <a href="https://divination.com/iching/lookup/">https://divination.com/iching/lookup/</a>
+        </p>
+        <p> Your present hexagram is: <h1 id = "presenthex"></h1>and your future hexagram is <h1 id = "futurehex"></h1></p>
+            
+        <p> Remeber to keep your question in mind when reading your hexagram(s).  Also as an ancient text there are many translations of each Hexagram,
+            so a Google search with alternate translation may provide additional insight.
+        </p>
+    </article>
+    <article id = "results">
+        <ul>Present Results
+            <li id = "presentdivination">Divination.com interpretation: </li>
+            <li id = "presentgoogle">Google Search: </li>
+        </ul>
+        <ul>Future Results
+            <li id = "futuredivination">Divination.com interpretation: </li>
+            <li id = "futuregoogle">Google Search: </li>
+        </ul>
+    </article>
+</body>
+</html> 
